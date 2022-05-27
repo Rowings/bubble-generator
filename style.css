@@ -7,7 +7,16 @@ body {
     position: absolute;
     border-radius: 300px;
     background: rgba(255,166,0, 0.6);
+    opacity: 0;
+    animation: anime 8s;
 }
 
 /* au lieu d'injecter le style par le js c'est plus simple de créer la classe ici */
 
+@keyframes anime {
+    to {
+        top: -250px;
+        opacity: 1;
+    }
+    
+}
